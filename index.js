@@ -132,7 +132,7 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = [`${setting.ownerNumber}@s.whatsapp.net`] // replace this with your number
+			const ownerNumber = 917895563559
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -372,7 +372,7 @@ async function starts() {
 						ranw = getRandom('.webp')
 						ranp = getRandom('.png')
 						reply(mess.wait)
-						keyrmbg = 'Your-ApiKey'
+						keyrmbg = 2iNeg2BymwKLSWb1DKFn49bq
 						await removeBackgroundFromImageFile({path: media, apiKey: keyrmbg, size: 'auto', type: 'auto', ranp}).then(res => {
 							fs.unlinkSync(media)
 							let buffer = Buffer.from(res.base64img, 'base64')
